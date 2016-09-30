@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCC69EB61D9E4A60006C1F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC69EB51D9E4A60006C1F64 /* AppDelegate.swift */; };
+		DCC69EB81D9E4A60006C1F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC69EB71D9E4A60006C1F64 /* ViewController.swift */; };
+		DCC69EBB1D9E4A60006C1F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC69EB91D9E4A60006C1F64 /* Main.storyboard */; };
+		DCC69EBD1D9E4A60006C1F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC69EBC1D9E4A60006C1F64 /* Assets.xcassets */; };
+		DCC69EC01D9E4A60006C1F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC69EBE1D9E4A60006C1F64 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCC69EB21D9E4A60006C1F64 /* Philips Hue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Philips Hue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC69EB51D9E4A60006C1F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCC69EB71D9E4A60006C1F64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCC69EBA1D9E4A60006C1F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCC69EBC1D9E4A60006C1F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCC69EBF1D9E4A60006C1F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCC69EC11D9E4A60006C1F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCC69EAF1D9E4A60006C1F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCC69EA91D9E4A60006C1F64 = {
+			isa = PBXGroup;
+			children = (
+				DCC69EB41D9E4A60006C1F64 /* Philips Hue */,
+				DCC69EB31D9E4A60006C1F64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCC69EB31D9E4A60006C1F64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCC69EB21D9E4A60006C1F64 /* Philips Hue.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCC69EB41D9E4A60006C1F64 /* Philips Hue */ = {
+			isa = PBXGroup;
+			children = (
+				DCC69EB51D9E4A60006C1F64 /* AppDelegate.swift */,
+				DCC69EB71D9E4A60006C1F64 /* ViewController.swift */,
+				DCC69EB91D9E4A60006C1F64 /* Main.storyboard */,
+				DCC69EBC1D9E4A60006C1F64 /* Assets.xcassets */,
+				DCC69EBE1D9E4A60006C1F64 /* LaunchScreen.storyboard */,
+				DCC69EC11D9E4A60006C1F64 /* Info.plist */,
+			);
+			path = "Philips Hue";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCC69EB11D9E4A60006C1F64 /* Philips Hue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC69EC41D9E4A60006C1F64 /* Build configuration list for PBXNativeTarget "Philips Hue" */;
+			buildPhases = (
+				DCC69EAE1D9E4A60006C1F64 /* Sources */,
+				DCC69EAF1D9E4A60006C1F64 /* Frameworks */,
+				DCC69EB01D9E4A60006C1F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Philips Hue";
+			productName = "Philips Hue";
+			productReference = DCC69EB21D9E4A60006C1F64 /* Philips Hue.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCC69EAA1D9E4A60006C1F64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Kasper Balink";
+				TargetAttributes = {
+					DCC69EB11D9E4A60006C1F64 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AYAE6842V7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DCC69EAD1D9E4A60006C1F64 /* Build configuration list for PBXProject "Philips Hue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCC69EA91D9E4A60006C1F64;
+			productRefGroup = DCC69EB31D9E4A60006C1F64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCC69EB11D9E4A60006C1F64 /* Philips Hue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCC69EB01D9E4A60006C1F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC69EC01D9E4A60006C1F64 /* LaunchScreen.storyboard in Resources */,
+				DCC69EBD1D9E4A60006C1F64 /* Assets.xcassets in Resources */,
+				DCC69EBB1D9E4A60006C1F64 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCC69EAE1D9E4A60006C1F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC69EB81D9E4A60006C1F64 /* ViewController.swift in Sources */,
+				DCC69EB61D9E4A60006C1F64 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCC69EB91D9E4A60006C1F64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC69EBA1D9E4A60006C1F64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCC69EBE1D9E4A60006C1F64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC69EBF1D9E4A60006C1F64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCC69EC21D9E4A60006C1F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCC69EC31D9E4A60006C1F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCC69EC51D9E4A60006C1F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AYAE6842V7;
+				INFOPLIST_FILE = "Philips Hue/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KasperBalink.Philips-Hue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DCC69EC61D9E4A60006C1F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AYAE6842V7;
+				INFOPLIST_FILE = "Philips Hue/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KasperBalink.Philips-Hue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCC69EAD1D9E4A60006C1F64 /* Build configuration list for PBXProject "Philips Hue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC69EC21D9E4A60006C1F64 /* Debug */,
+				DCC69EC31D9E4A60006C1F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC69EC41D9E4A60006C1F64 /* Build configuration list for PBXNativeTarget "Philips Hue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC69EC51D9E4A60006C1F64 /* Debug */,
+				DCC69EC61D9E4A60006C1F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCC69EAA1D9E4A60006C1F64 /* Project object */;
+}
