@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DCC69EB11D9E4A60006C1F64"
-               BuildableName = "Philips Hue.app"
-               BlueprintName = "Philips Hue"
-               ReferencedContainer = "container:Philips Hue.xcodeproj">
+               BlueprintIdentifier = "F88B5C1201A943DCB2944A84C1EED217"
+               BuildableName = "Pods_Philips_Hue.framework"
+               BlueprintName = "Pods-Philips Hue"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCC69EB11D9E4A60006C1F64"
-            BuildableName = "Philips Hue.app"
-            BlueprintName = "Philips Hue"
-            ReferencedContainer = "container:Philips Hue.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,23 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCC69EB11D9E4A60006C1F64"
-            BuildableName = "Philips Hue.app"
-            BlueprintName = "Philips Hue"
-            ReferencedContainer = "container:Philips Hue.xcodeproj">
+            BlueprintIdentifier = "F88B5C1201A943DCB2944A84C1EED217"
+            BuildableName = "Pods_Philips_Hue.framework"
+            BlueprintName = "Pods-Philips Hue"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -77,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCC69EB11D9E4A60006C1F64"
-            BuildableName = "Philips Hue.app"
-            BlueprintName = "Philips Hue"
-            ReferencedContainer = "container:Philips Hue.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

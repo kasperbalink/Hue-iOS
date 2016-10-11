@@ -7,14 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11260FF3D0626831C3CDAA92 /* Pods_Philips_Hue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124B6B9C32F4EB517D9195B9 /* Pods_Philips_Hue.framework */; };
+		DC9AF7041DA79A7C0041DA5E /* HueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9AF7031DA79A7C0041DA5E /* HueCell.swift */; };
 		DCC69EB61D9E4A60006C1F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC69EB51D9E4A60006C1F64 /* AppDelegate.swift */; };
 		DCC69EB81D9E4A60006C1F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC69EB71D9E4A60006C1F64 /* ViewController.swift */; };
 		DCC69EBB1D9E4A60006C1F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC69EB91D9E4A60006C1F64 /* Main.storyboard */; };
 		DCC69EBD1D9E4A60006C1F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC69EBC1D9E4A60006C1F64 /* Assets.xcassets */; };
 		DCC69EC01D9E4A60006C1F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC69EBE1D9E4A60006C1F64 /* LaunchScreen.storyboard */; };
+		DCC69EC81D9E4B5E006C1F64 /* HueLamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC69EC71D9E4B5E006C1F64 /* HueLamp.swift */; };
+		DCC69ECA1D9E4C1D006C1F64 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC69EC91D9E4C1D006C1F64 /* DetailViewController.swift */; };
+		DCE5CA781D9E87CA00AA3C14 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE5CA6B1D9E863500AA3C14 /* Alamofire.framework */; };
+		DCE5CA791D9E87CA00AA3C14 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCE5CA6B1D9E863500AA3C14 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCFD6EB61DA675AD00A463A4 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCFD6EB51DA675AD00A463A4 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DCE5CA6A1D9E863500AA3C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		DCE5CA6C1D9E863500AA3C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		DCE5CA6E1D9E863500AA3C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		DCE5CA701D9E863500AA3C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		DCE5CA721D9E863500AA3C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		DCE5CA741D9E863500AA3C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		DCE5CA761D9E863500AA3C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		DCE5CA7A1D9E87CB00AA3C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCE5CA7C1D9E87CB00AA3C14 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DCE5CA791D9E87CA00AA3C14 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		029FDF90ECC7D2F79E46995D /* Pods-Philips Hue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Philips Hue.release.xcconfig"; path = "Pods/Target Support Files/Pods-Philips Hue/Pods-Philips Hue.release.xcconfig"; sourceTree = "<group>"; };
+		124B6B9C32F4EB517D9195B9 /* Pods_Philips_Hue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Philips_Hue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB44C41690E6E2881165D301 /* Pods-Philips Hue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Philips Hue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Philips Hue/Pods-Philips Hue.debug.xcconfig"; sourceTree = "<group>"; };
+		DC9AF7031DA79A7C0041DA5E /* HueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HueCell.swift; path = ../HueCell.swift; sourceTree = "<group>"; };
 		DCC69EB21D9E4A60006C1F64 /* Philips Hue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Philips Hue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC69EB51D9E4A60006C1F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC69EB71D9E4A60006C1F64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +106,10 @@
 		DCC69EBC1D9E4A60006C1F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCC69EBF1D9E4A60006C1F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCC69EC11D9E4A60006C1F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC69EC71D9E4B5E006C1F64 /* HueLamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueLamp.swift; sourceTree = "<group>"; };
+		DCC69EC91D9E4C1D006C1F64 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		DCFD6EB51DA675AD00A463A4 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +117,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE5CA781D9E87CA00AA3C14 /* Alamofire.framework in Frameworks */,
+				11260FF3D0626831C3CDAA92 /* Pods_Philips_Hue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A57240617BE0DC92B57BEA24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB44C41690E6E2881165D301 /* Pods-Philips Hue.debug.xcconfig */,
+				029FDF90ECC7D2F79E46995D /* Pods-Philips Hue.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1E8E401617715505BBC80EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				124B6B9C32F4EB517D9195B9 /* Pods_Philips_Hue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DCC69EA91D9E4A60006C1F64 = {
 			isa = PBXGroup;
 			children = (
+				DCFD6EB51DA675AD00A463A4 /* Settings.bundle */,
+				DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */,
 				DCC69EB41D9E4A60006C1F64 /* Philips Hue */,
 				DCC69EB31D9E4A60006C1F64 /* Products */,
+				A57240617BE0DC92B57BEA24 /* Pods */,
+				B1E8E401617715505BBC80EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +167,29 @@
 			children = (
 				DCC69EB51D9E4A60006C1F64 /* AppDelegate.swift */,
 				DCC69EB71D9E4A60006C1F64 /* ViewController.swift */,
+				DC9AF7031DA79A7C0041DA5E /* HueCell.swift */,
 				DCC69EB91D9E4A60006C1F64 /* Main.storyboard */,
 				DCC69EBC1D9E4A60006C1F64 /* Assets.xcassets */,
 				DCC69EBE1D9E4A60006C1F64 /* LaunchScreen.storyboard */,
 				DCC69EC11D9E4A60006C1F64 /* Info.plist */,
+				DCC69EC71D9E4B5E006C1F64 /* HueLamp.swift */,
+				DCC69EC91D9E4C1D006C1F64 /* DetailViewController.swift */,
 			);
 			path = "Philips Hue";
+			sourceTree = "<group>";
+		};
+		DCE5CA601D9E863500AA3C14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCE5CA6B1D9E863500AA3C14 /* Alamofire.framework */,
+				DCE5CA6D1D9E863500AA3C14 /* Alamofire iOS Tests.xctest */,
+				DCE5CA6F1D9E863500AA3C14 /* Alamofire.framework */,
+				DCE5CA711D9E863500AA3C14 /* Alamofire macOS Tests.xctest */,
+				DCE5CA731D9E863500AA3C14 /* Alamofire.framework */,
+				DCE5CA751D9E863500AA3C14 /* Alamofire tvOS Tests.xctest */,
+				DCE5CA771D9E863500AA3C14 /* Alamofire.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,13 +199,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCC69EC41D9E4A60006C1F64 /* Build configuration list for PBXNativeTarget "Philips Hue" */;
 			buildPhases = (
+				0C7A396EA4CE518D3D87FEEA /* [CP] Check Pods Manifest.lock */,
 				DCC69EAE1D9E4A60006C1F64 /* Sources */,
 				DCC69EAF1D9E4A60006C1F64 /* Frameworks */,
 				DCC69EB01D9E4A60006C1F64 /* Resources */,
+				DCE5CA7C1D9E87CB00AA3C14 /* Embed Frameworks */,
+				BEC4531D141A3375B4E9F69C /* [CP] Embed Pods Frameworks */,
+				4F531513617A6CF8ABFC4CA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DCE5CA7B1D9E87CB00AA3C14 /* PBXTargetDependency */,
 			);
 			name = "Philips Hue";
 			productName = "Philips Hue";
@@ -112,6 +245,12 @@
 			mainGroup = DCC69EA91D9E4A60006C1F64;
 			productRefGroup = DCC69EB31D9E4A60006C1F64 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DCE5CA601D9E863500AA3C14 /* Products */;
+					ProjectRef = DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DCC69EB11D9E4A60006C1F64 /* Philips Hue */,
@@ -119,11 +258,64 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		DCE5CA6B1D9E863500AA3C14 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = DCE5CA6A1D9E863500AA3C14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCE5CA6D1D9E863500AA3C14 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = DCE5CA6C1D9E863500AA3C14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCE5CA6F1D9E863500AA3C14 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = DCE5CA6E1D9E863500AA3C14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCE5CA711D9E863500AA3C14 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = DCE5CA701D9E863500AA3C14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCE5CA731D9E863500AA3C14 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = DCE5CA721D9E863500AA3C14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCE5CA751D9E863500AA3C14 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = DCE5CA741D9E863500AA3C14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCE5CA771D9E863500AA3C14 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = DCE5CA761D9E863500AA3C14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		DCC69EB01D9E4A60006C1F64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFD6EB61DA675AD00A463A4 /* Settings.bundle in Resources */,
 				DCC69EC01D9E4A60006C1F64 /* LaunchScreen.storyboard in Resources */,
 				DCC69EBD1D9E4A60006C1F64 /* Assets.xcassets in Resources */,
 				DCC69EBB1D9E4A60006C1F64 /* Main.storyboard in Resources */,
@@ -132,17 +324,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C7A396EA4CE518D3D87FEEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F531513617A6CF8ABFC4CA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Philips Hue/Pods-Philips Hue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEC4531D141A3375B4E9F69C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Philips Hue/Pods-Philips Hue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCC69EAE1D9E4A60006C1F64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC69EC81D9E4B5E006C1F64 /* HueLamp.swift in Sources */,
 				DCC69EB81D9E4A60006C1F64 /* ViewController.swift in Sources */,
+				DC9AF7041DA79A7C0041DA5E /* HueCell.swift in Sources */,
 				DCC69EB61D9E4A60006C1F64 /* AppDelegate.swift in Sources */,
+				DCC69ECA1D9E4C1D006C1F64 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCE5CA7B1D9E87CB00AA3C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = DCE5CA7A1D9E87CB00AA3C14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DCC69EB91D9E4A60006C1F64 /* Main.storyboard */ = {
@@ -259,7 +510,9 @@
 		};
 		DCC69EC51D9E4A60006C1F64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB44C41690E6E2881165D301 /* Pods-Philips Hue.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AYAE6842V7;
 				INFOPLIST_FILE = "Philips Hue/Info.plist";
@@ -272,7 +525,9 @@
 		};
 		DCC69EC61D9E4A60006C1F64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 029FDF90ECC7D2F79E46995D /* Pods-Philips Hue.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AYAE6842V7;
 				INFOPLIST_FILE = "Philips Hue/Info.plist";
@@ -302,6 +557,7 @@
 				DCC69EC61D9E4A60006C1F64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
