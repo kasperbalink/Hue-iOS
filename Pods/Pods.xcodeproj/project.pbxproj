@@ -7,47 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2072517EECD328A6B70ECC161E48C83A /* Pods-Philips Hue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DC7356848CA95D67CBCD85DD70D55 /* Pods-Philips Hue-dummy.m */; };
-		37D232E233A69FCB80E088012249A4C5 /* Pods-Philips Hue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04EF4A53FDAEC482E853D4AF30513397 /* Pods-Philips Hue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38F0FFBB854292307F84451A6D5987B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		46A929276939F897CD96B324F7A85DF2 /* EZLoadingActivity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACA39B92BD07E30E6195CB28B011142 /* EZLoadingActivity-dummy.m */; };
-		6EC487A1DAD83888E9BB27795BC95407 /* EZLoadingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3A4D16D06EC1F74870BB4B52F1FC11 /* EZLoadingActivity.swift */; };
-		A443CC3D9011BFA6A6C7E1F042FAA423 /* EZLoadingActivity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6730FB36F7EB88294DF4646496AF8B /* EZLoadingActivity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1479B57B0313AB0A4AB3C62085514ABC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6A28CADCC457FD914C123B9F506289 /* SwiftyJSON.swift */; };
+		262FFFCB32F8087C89C1F8577F3F29F4 /* Pods-Philips Hue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DC7356848CA95D67CBCD85DD70D55 /* Pods-Philips Hue-dummy.m */; };
+		32DDE7A24419958038E69BF2460FCC12 /* Pods-Philips Hue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04EF4A53FDAEC482E853D4AF30513397 /* Pods-Philips Hue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46A929276939F897CD96B324F7A85DF2 /* EZLoadingActivity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456A2A4DFE142C9C66E95FE83CD3BEF /* EZLoadingActivity-dummy.m */; };
+		4A639A7256867C2F4A991C24AC0250A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5141EE1533BEF62216C686DE707EAD5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		6EC487A1DAD83888E9BB27795BC95407 /* EZLoadingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403CE397541F6CFBC9EEF00D5378E0B /* EZLoadingActivity.swift */; };
+		7EE8598842AD1EC0178CA39C7DA1E7AA /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD117717BFB6675122074F275012197B /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89BA6D46EEDCC52CB9623D6CF0FFF4D5 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122D3F264576682FF01721A459B6FEC /* SwiftyJSON-dummy.m */; };
+		A443CC3D9011BFA6A6C7E1F042FAA423 /* EZLoadingActivity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F277DCE643B3135ECCA11E480CE6C1CB /* EZLoadingActivity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA64D971AA63582499FB2216EA72886D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		30E4FAE35DCF2FFA7B396B7114B60BE4 /* PBXContainerItemProxy */ = {
+		7DE54B720B2E338BC4DE5A7C8D45C9B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 903A108934E1A089B76F443DC34C8E54;
 			remoteInfo = EZLoadingActivity;
 		};
+		90C8F8D56F7CCEBDDC45F3776F65CDA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A174CABD1CBF8CCFE4A8FC09B7CE8CC;
+			remoteInfo = SwiftyJSON;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036316AE7BE73993D7AA0F93B9892F87 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EF4A53FDAEC482E853D4AF30513397 /* Pods-Philips Hue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Philips Hue-umbrella.h"; sourceTree = "<group>"; };
-		0ACA39B92BD07E30E6195CB28B011142 /* EZLoadingActivity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EZLoadingActivity-dummy.m"; sourceTree = "<group>"; };
+		063DEC42937561D16D235B1BF8AAFA74 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B5900C682D0C621827C2DA607BA0B3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1122D3F264576682FF01721A459B6FEC /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		1C7C651DECAC7315DC9D6615C88C1E11 /* Pods-Philips Hue-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Philips Hue-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2BDCB032D8279618EB1AB113B3FAA33C /* Pods-Philips Hue-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Philips Hue-frameworks.sh"; sourceTree = "<group>"; };
+		3456A2A4DFE142C9C66E95FE83CD3BEF /* EZLoadingActivity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EZLoadingActivity-dummy.m"; sourceTree = "<group>"; };
 		34CAF5A9BE39FD0E0BE7FBAB46199F24 /* Pods-Philips Hue-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Philips Hue-acknowledgements.plist"; sourceTree = "<group>"; };
-		3C0BC2A2EA8733C368F3F297A4ACCBD5 /* EZLoadingActivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EZLoadingActivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4048BC6B69DF18FE2D1E0DB3230184C7 /* EZLoadingActivity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EZLoadingActivity.modulemap; sourceTree = "<group>"; };
 		49DE80760DC6BB391F7232249292D188 /* Pods-Philips Hue-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Philips Hue-resources.sh"; sourceTree = "<group>"; };
+		4CD109587B73DF5A8C79A27F0549C828 /* EZLoadingActivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EZLoadingActivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		510E084845DC7A3A87F7F13FCEB32DC0 /* Pods-Philips Hue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Philips Hue.modulemap"; sourceTree = "<group>"; };
-		5F6730FB36F7EB88294DF4646496AF8B /* EZLoadingActivity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EZLoadingActivity-umbrella.h"; sourceTree = "<group>"; };
-		7A3A4D16D06EC1F74870BB4B52F1FC11 /* EZLoadingActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EZLoadingActivity.swift; sourceTree = "<group>"; };
+		62CEEB6E9FCEFE48A626E3CBD0134864 /* Pods_Philips_Hue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Philips_Hue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC01EAD1D369DF8F8C7AFDC6C6907FB /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		7EB3A5E78F6B89F78C33848044DD1DBE /* Pods-Philips Hue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Philips Hue.debug.xcconfig"; sourceTree = "<group>"; };
 		894DC7356848CA95D67CBCD85DD70D55 /* Pods-Philips Hue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Philips Hue-dummy.m"; sourceTree = "<group>"; };
+		8F6A28CADCC457FD914C123B9F506289 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0582B4E9A09F7090FD8B39F62AFC9D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBB19812FB370747BCF122DEBB1C47E7 /* Pods_Philips_Hue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Philips_Hue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1C7BEFF4E48BF221BC161677DEF0E6 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		A403CE397541F6CFBC9EEF00D5378E0B /* EZLoadingActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EZLoadingActivity.swift; sourceTree = "<group>"; };
 		BCD25BB756B832873843DD97AC90EA86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD117717BFB6675122074F275012197B /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		C0AFDA9EDA5403894A01E2F652E0DC8A /* EZLoadingActivity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EZLoadingActivity.xcconfig; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E3D73FD96DD5C995197D2F94CAE5C058 /* EZLoadingActivity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EZLoadingActivity.xcconfig; sourceTree = "<group>"; };
-		E9D295C073D92BCEED6712F02CCF8D1E /* EZLoadingActivity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EZLoadingActivity.modulemap; sourceTree = "<group>"; };
+		D38D998A3F60E36B6575077E21EB8DC3 /* EZLoadingActivity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EZLoadingActivity-prefix.pch"; sourceTree = "<group>"; };
+		E84723F57671F3144685C5F90915566C /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		F257B80792199D7D431F360C6A97F706 /* Pods-Philips Hue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Philips Hue.release.xcconfig"; sourceTree = "<group>"; };
-		FEB6C434FFD3476570895504E5E10D36 /* EZLoadingActivity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EZLoadingActivity-prefix.pch"; sourceTree = "<group>"; };
+		F277DCE643B3135ECCA11E480CE6C1CB /* EZLoadingActivity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EZLoadingActivity-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,54 +78,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A30B5897AB6B53562D8918989E8C021B /* Frameworks */ = {
+		AE95FEDE7A1DE72FD29ED9C5E244DA4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38F0FFBB854292307F84451A6D5987B1 /* Foundation.framework in Frameworks */,
+				5141EE1533BEF62216C686DE707EAD5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2F088636B167149942E06AB617F2622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A639A7256867C2F4A991C24AC0250A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00EEBD26AE00F56FB6A383F3836607FD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E9D295C073D92BCEED6712F02CCF8D1E /* EZLoadingActivity.modulemap */,
-				E3D73FD96DD5C995197D2F94CAE5C058 /* EZLoadingActivity.xcconfig */,
-				0ACA39B92BD07E30E6195CB28B011142 /* EZLoadingActivity-dummy.m */,
-				FEB6C434FFD3476570895504E5E10D36 /* EZLoadingActivity-prefix.pch */,
-				5F6730FB36F7EB88294DF4646496AF8B /* EZLoadingActivity-umbrella.h */,
-				A0582B4E9A09F7090FD8B39F62AFC9D5 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/EZLoadingActivity";
-			sourceTree = "<group>";
-		};
-		05F3E90AD8CD27A5859CD55E83E07F9C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0ABCA454C622D281F61A01412EAC0B25 /* EZLoadingActivity */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		0ABCA454C622D281F61A01412EAC0B25 /* EZLoadingActivity */ = {
-			isa = PBXGroup;
-			children = (
-				7A3A4D16D06EC1F74870BB4B52F1FC11 /* EZLoadingActivity.swift */,
-				00EEBD26AE00F56FB6A383F3836607FD /* Support Files */,
-			);
-			path = EZLoadingActivity;
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		404A2F76351140FA203E0EF2B113C154 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				063DEC42937561D16D235B1BF8AAFA74 /* Info.plist */,
+				9A1C7BEFF4E48BF221BC161677DEF0E6 /* SwiftyJSON.modulemap */,
+				E84723F57671F3144685C5F90915566C /* SwiftyJSON.xcconfig */,
+				1122D3F264576682FF01721A459B6FEC /* SwiftyJSON-dummy.m */,
+				6FC01EAD1D369DF8F8C7AFDC6C6907FB /* SwiftyJSON-prefix.pch */,
+				BD117717BFB6675122074F275012197B /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		580FC49CAA3E38077D86A597ED857306 /* Pods-Philips Hue */ = {
@@ -135,15 +145,43 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		65A00690BB7DD778D583A4C023DD5679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CD109587B73DF5A8C79A27F0549C828 /* EZLoadingActivity.framework */,
+				62CEEB6E9FCEFE48A626E3CBD0134864 /* Pods_Philips_Hue.framework */,
+				036316AE7BE73993D7AA0F93B9892F87 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				05F3E90AD8CD27A5859CD55E83E07F9C /* Pods */,
-				E59BECC7C3B22387D7BACF913D90C538 /* Products */,
+				9F7BE09211FD46D684C43237DA8FC60B /* Pods */,
+				65A00690BB7DD778D583A4C023DD5679 /* Products */,
 				64DDF9E6EAD5E4978D4B05DF31704274 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9F7BE09211FD46D684C43237DA8FC60B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7834F22276EFCA906B8124F07EE207D /* EZLoadingActivity */,
+				A4886FF3714B70AF9A367B34B16CC65D /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A4886FF3714B70AF9A367B34B16CC65D /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				8F6A28CADCC457FD914C123B9F506289 /* SwiftyJSON.swift */,
+				404A2F76351140FA203E0EF2B113C154 /* Support Files */,
+			);
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -154,23 +192,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E59BECC7C3B22387D7BACF913D90C538 /* Products */ = {
+		C7834F22276EFCA906B8124F07EE207D /* EZLoadingActivity */ = {
 			isa = PBXGroup;
 			children = (
-				3C0BC2A2EA8733C368F3F297A4ACCBD5 /* EZLoadingActivity.framework */,
-				BBB19812FB370747BCF122DEBB1C47E7 /* Pods_Philips_Hue.framework */,
+				A403CE397541F6CFBC9EEF00D5378E0B /* EZLoadingActivity.swift */,
+				FE21ABF0916F0A50820660A983BC436F /* Support Files */,
 			);
-			name = Products;
+			path = EZLoadingActivity;
+			sourceTree = "<group>";
+		};
+		FE21ABF0916F0A50820660A983BC436F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4048BC6B69DF18FE2D1E0DB3230184C7 /* EZLoadingActivity.modulemap */,
+				C0AFDA9EDA5403894A01E2F652E0DC8A /* EZLoadingActivity.xcconfig */,
+				3456A2A4DFE142C9C66E95FE83CD3BEF /* EZLoadingActivity-dummy.m */,
+				D38D998A3F60E36B6575077E21EB8DC3 /* EZLoadingActivity-prefix.pch */,
+				F277DCE643B3135ECCA11E480CE6C1CB /* EZLoadingActivity-umbrella.h */,
+				0B5900C682D0C621827C2DA607BA0B3C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EZLoadingActivity";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0E5C123408160444A546F8CCAA084646 /* Headers */ = {
+		8AE9B1F65D65796A86C7862B6F223DCB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37D232E233A69FCB80E088012249A4C5 /* Pods-Philips Hue-umbrella.h in Headers */,
+				7EE8598842AD1EC0178CA39C7DA1E7AA /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,9 +234,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7EDD29751320C4A876857ACCDE9F569 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DDE7A24419958038E69BF2460FCC12 /* Pods-Philips Hue-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4BFE0ADDFE6650DBC57ED377F56281BA /* Pods-Philips Hue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE94B9D9BF6843DEAD903B26BDC4836 /* Build configuration list for PBXNativeTarget "Pods-Philips Hue" */;
+			buildPhases = (
+				1EE972727EC1D6B391EEF5BB86376811 /* Sources */,
+				C2F088636B167149942E06AB617F2622 /* Frameworks */,
+				C7EDD29751320C4A876857ACCDE9F569 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEB67EC632C416776A7525D08E6FABFD /* PBXTargetDependency */,
+				814A5D1721DCF90BCEFCA8159CF09D5A /* PBXTargetDependency */,
+			);
+			name = "Pods-Philips Hue";
+			productName = "Pods-Philips Hue";
+			productReference = 62CEEB6E9FCEFE48A626E3CBD0134864 /* Pods_Philips_Hue.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		903A108934E1A089B76F443DC34C8E54 /* EZLoadingActivity */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9DAAB7EF83CC9BB996F894473D8FB00 /* Build configuration list for PBXNativeTarget "EZLoadingActivity" */;
@@ -199,25 +278,24 @@
 			);
 			name = EZLoadingActivity;
 			productName = EZLoadingActivity;
-			productReference = 3C0BC2A2EA8733C368F3F297A4ACCBD5 /* EZLoadingActivity.framework */;
+			productReference = 4CD109587B73DF5A8C79A27F0549C828 /* EZLoadingActivity.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F88B5C1201A943DCB2944A84C1EED217 /* Pods-Philips Hue */ = {
+		9A174CABD1CBF8CCFE4A8FC09B7CE8CC /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 438228F8FEDC29CA2FEFBEE5BE579E8F /* Build configuration list for PBXNativeTarget "Pods-Philips Hue" */;
+			buildConfigurationList = CD92C6C910CB235319240D5E259B5D3C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				08C41696056ECCA51223BF98AA724272 /* Sources */,
-				A30B5897AB6B53562D8918989E8C021B /* Frameworks */,
-				0E5C123408160444A546F8CCAA084646 /* Headers */,
+				D506E94A7CF03A7D866796BC7AE6AF16 /* Sources */,
+				AE95FEDE7A1DE72FD29ED9C5E244DA4F /* Frameworks */,
+				8AE9B1F65D65796A86C7862B6F223DCB /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5B1CBF5391069FCC373FBAD3768C7ABB /* PBXTargetDependency */,
 			);
-			name = "Pods-Philips Hue";
-			productName = "Pods-Philips Hue";
-			productReference = BBB19812FB370747BCF122DEBB1C47E7 /* Pods_Philips_Hue.framework */;
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 036316AE7BE73993D7AA0F93B9892F87 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -237,22 +315,23 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E59BECC7C3B22387D7BACF913D90C538 /* Products */;
+			productRefGroup = 65A00690BB7DD778D583A4C023DD5679 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				903A108934E1A089B76F443DC34C8E54 /* EZLoadingActivity */,
-				F88B5C1201A943DCB2944A84C1EED217 /* Pods-Philips Hue */,
+				4BFE0ADDFE6650DBC57ED377F56281BA /* Pods-Philips Hue */,
+				9A174CABD1CBF8CCFE4A8FC09B7CE8CC /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		08C41696056ECCA51223BF98AA724272 /* Sources */ = {
+		1EE972727EC1D6B391EEF5BB86376811 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2072517EECD328A6B70ECC161E48C83A /* Pods-Philips Hue-dummy.m in Sources */,
+				262FFFCB32F8087C89C1F8577F3F29F4 /* Pods-Philips Hue-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +344,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D506E94A7CF03A7D866796BC7AE6AF16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BA6D46EEDCC52CB9623D6CF0FFF4D5 /* SwiftyJSON-dummy.m in Sources */,
+				1479B57B0313AB0A4AB3C62085514ABC /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5B1CBF5391069FCC373FBAD3768C7ABB /* PBXTargetDependency */ = {
+		814A5D1721DCF90BCEFCA8159CF09D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 9A174CABD1CBF8CCFE4A8FC09B7CE8CC /* SwiftyJSON */;
+			targetProxy = 90C8F8D56F7CCEBDDC45F3776F65CDA5 /* PBXContainerItemProxy */;
+		};
+		FEB67EC632C416776A7525D08E6FABFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EZLoadingActivity;
 			target = 903A108934E1A089B76F443DC34C8E54 /* EZLoadingActivity */;
-			targetProxy = 30E4FAE35DCF2FFA7B396B7114B60BE4 /* PBXContainerItemProxy */;
+			targetProxy = 7DE54B720B2E338BC4DE5A7C8D45C9B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -321,39 +415,7 @@
 			};
 			name = Debug;
 		};
-		28BD25B5B73F79D1349EFAE35E6E2BE0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3D73FD96DD5C995197D2F94CAE5C058 /* EZLoadingActivity.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EZLoadingActivity/EZLoadingActivity-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EZLoadingActivity/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EZLoadingActivity/EZLoadingActivity.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = EZLoadingActivity;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		38967324EC3318BC40FF7EF3E1C88CBD /* Debug */ = {
+		19232977909577DF20D87FF8028F7767 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7EB3A5E78F6B89F78C33848044DD1DBE /* Pods-Philips Hue.debug.xcconfig */;
 			buildSettings = {
@@ -389,15 +451,15 @@
 			};
 			name = Debug;
 		};
-		997C723FAA003A2F7FE21099802297DF /* Debug */ = {
+		28BD25B5B73F79D1349EFAE35E6E2BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3D73FD96DD5C995197D2F94CAE5C058 /* EZLoadingActivity.xcconfig */;
+			baseConfigurationReference = C0AFDA9EDA5403894A01E2F652E0DC8A /* EZLoadingActivity.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -410,19 +472,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/EZLoadingActivity/EZLoadingActivity.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = EZLoadingActivity;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		BD1432007AE64F0A428EA1FB7D77C949 /* Release */ = {
+		412B73402A2B9E01246A65FE2EF0EFE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F257B80792199D7D431F360C6A97F706 /* Pods-Philips Hue.release.xcconfig */;
 			buildSettings = {
@@ -456,6 +517,72 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		4853AD72DF0B07BA18A62015D361DC26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84723F57671F3144685C5F90915566C /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		997C723FAA003A2F7FE21099802297DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0AFDA9EDA5403894A01E2F652E0DC8A /* EZLoadingActivity.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EZLoadingActivity/EZLoadingActivity-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EZLoadingActivity/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EZLoadingActivity/EZLoadingActivity.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EZLoadingActivity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -497,6 +624,38 @@
 			};
 			name = Release;
 		};
+		F728A1912D69B6864DEF27ED4AEC61F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84723F57671F3144685C5F90915566C /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -509,11 +668,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		438228F8FEDC29CA2FEFBEE5BE579E8F /* Build configuration list for PBXNativeTarget "Pods-Philips Hue" */ = {
+		8CE94B9D9BF6843DEAD903B26BDC4836 /* Build configuration list for PBXNativeTarget "Pods-Philips Hue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38967324EC3318BC40FF7EF3E1C88CBD /* Debug */,
-				BD1432007AE64F0A428EA1FB7D77C949 /* Release */,
+				19232977909577DF20D87FF8028F7767 /* Debug */,
+				412B73402A2B9E01246A65FE2EF0EFE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD92C6C910CB235319240D5E259B5D3C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4853AD72DF0B07BA18A62015D361DC26 /* Debug */,
+				F728A1912D69B6864DEF27ED4AEC61F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

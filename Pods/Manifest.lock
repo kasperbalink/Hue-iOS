@@ -1,12 +1,15 @@
 PODS:
   - EZLoadingActivity (0.9)
+  - SwiftyJSON (3.1.0)
 
 DEPENDENCIES:
   - EZLoadingActivity
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   EZLoadingActivity: 7ebb84c1f2510a62d2bc0a17cc9d75634f92606d
+  SwiftyJSON: 29b9f2a64f118c07e691667c2ba1efe536acfe0b
 
-PODFILE CHECKSUM: 81fe166133dd88f288046049fc9dfe2271b91337
+PODFILE CHECKSUM: ae5c314dd5fbea473aaa58117acb69ef8acf656f
 
 COCOAPODS: 1.1.0.rc.2

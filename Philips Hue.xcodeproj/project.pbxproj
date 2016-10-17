@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		11260FF3D0626831C3CDAA92 /* Pods_Philips_Hue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124B6B9C32F4EB517D9195B9 /* Pods_Philips_Hue.framework */; };
+		DC80702D1DAFFAA90013DBC9 /* AddBridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC80702C1DAFFAA90013DBC9 /* AddBridgeViewController.swift */; };
 		DC9AF7041DA79A7C0041DA5E /* HueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9AF7031DA79A7C0041DA5E /* HueCell.swift */; };
+		DCA14B601DAFD0650086E53D /* HueBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA14B5F1DAFD0650086E53D /* HueBridge.swift */; };
+		DCA14B691DAFD0E80086E53D /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA14B681DAFD0E80086E53D /* BridgeViewController.swift */; };
+		DCA14B6B1DAFD74B0086E53D /* HueDatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA14B6A1DAFD74B0086E53D /* HueDatabaseHelper.swift */; };
+		DCA14B6E1DAFD7C60086E53D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA14B6C1DAFD7C60086E53D /* libsqlite3.0.tbd */; };
+		DCA14B6F1DAFD7C60086E53D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA14B6D1DAFD7C60086E53D /* libsqlite3.tbd */; };
 		DCC69EB61D9E4A60006C1F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC69EB51D9E4A60006C1F64 /* AppDelegate.swift */; };
 		DCC69EB81D9E4A60006C1F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC69EB71D9E4A60006C1F64 /* ViewController.swift */; };
 		DCC69EBB1D9E4A60006C1F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC69EB91D9E4A60006C1F64 /* Main.storyboard */; };
@@ -18,7 +24,7 @@
 		DCC69ECA1D9E4C1D006C1F64 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC69EC91D9E4C1D006C1F64 /* DetailViewController.swift */; };
 		DCE5CA781D9E87CA00AA3C14 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE5CA6B1D9E863500AA3C14 /* Alamofire.framework */; };
 		DCE5CA791D9E87CA00AA3C14 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCE5CA6B1D9E863500AA3C14 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DCFD6EB61DA675AD00A463A4 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCFD6EB51DA675AD00A463A4 /* Settings.bundle */; };
+		DCFC0B311DB50F7700A937AE /* huebridges.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = DCFC0B301DB50F7700A937AE /* huebridges.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +104,14 @@
 		029FDF90ECC7D2F79E46995D /* Pods-Philips Hue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Philips Hue.release.xcconfig"; path = "Pods/Target Support Files/Pods-Philips Hue/Pods-Philips Hue.release.xcconfig"; sourceTree = "<group>"; };
 		124B6B9C32F4EB517D9195B9 /* Pods_Philips_Hue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Philips_Hue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB44C41690E6E2881165D301 /* Pods-Philips Hue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Philips Hue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Philips Hue/Pods-Philips Hue.debug.xcconfig"; sourceTree = "<group>"; };
+		DC80702C1DAFFAA90013DBC9 /* AddBridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBridgeViewController.swift; sourceTree = "<group>"; };
 		DC9AF7031DA79A7C0041DA5E /* HueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HueCell.swift; path = ../HueCell.swift; sourceTree = "<group>"; };
+		DCA14B5F1DAFD0650086E53D /* HueBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueBridge.swift; sourceTree = "<group>"; };
+		DCA14B681DAFD0E80086E53D /* BridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
+		DCA14B6A1DAFD74B0086E53D /* HueDatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueDatabaseHelper.swift; sourceTree = "<group>"; };
+		DCA14B6C1DAFD7C60086E53D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		DCA14B6D1DAFD7C60086E53D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DCA14B701DAFD8E70086E53D /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DCC69EB21D9E4A60006C1F64 /* Philips Hue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Philips Hue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC69EB51D9E4A60006C1F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC69EB71D9E4A60006C1F64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +122,7 @@
 		DCC69EC71D9E4B5E006C1F64 /* HueLamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueLamp.swift; sourceTree = "<group>"; };
 		DCC69EC91D9E4C1D006C1F64 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		DCFD6EB51DA675AD00A463A4 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		DCFC0B301DB50F7700A937AE /* huebridges.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = huebridges.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA14B6E1DAFD7C60086E53D /* libsqlite3.0.tbd in Frameworks */,
+				DCA14B6F1DAFD7C60086E53D /* libsqlite3.tbd in Frameworks */,
 				DCE5CA781D9E87CA00AA3C14 /* Alamofire.framework in Frameworks */,
 				11260FF3D0626831C3CDAA92 /* Pods_Philips_Hue.framework in Frameworks */,
 			);
@@ -137,6 +152,8 @@
 		B1E8E401617715505BBC80EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCA14B6C1DAFD7C60086E53D /* libsqlite3.0.tbd */,
+				DCA14B6D1DAFD7C60086E53D /* libsqlite3.tbd */,
 				124B6B9C32F4EB517D9195B9 /* Pods_Philips_Hue.framework */,
 			);
 			name = Frameworks;
@@ -145,7 +162,6 @@
 		DCC69EA91D9E4A60006C1F64 = {
 			isa = PBXGroup;
 			children = (
-				DCFD6EB51DA675AD00A463A4 /* Settings.bundle */,
 				DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */,
 				DCC69EB41D9E4A60006C1F64 /* Philips Hue */,
 				DCC69EB31D9E4A60006C1F64 /* Products */,
@@ -165,6 +181,8 @@
 		DCC69EB41D9E4A60006C1F64 /* Philips Hue */ = {
 			isa = PBXGroup;
 			children = (
+				DCFC0B301DB50F7700A937AE /* huebridges.sqlite */,
+				DCA14B701DAFD8E70086E53D /* Bridging-Header.h */,
 				DCC69EB51D9E4A60006C1F64 /* AppDelegate.swift */,
 				DCC69EB71D9E4A60006C1F64 /* ViewController.swift */,
 				DC9AF7031DA79A7C0041DA5E /* HueCell.swift */,
@@ -174,6 +192,10 @@
 				DCC69EC11D9E4A60006C1F64 /* Info.plist */,
 				DCC69EC71D9E4B5E006C1F64 /* HueLamp.swift */,
 				DCC69EC91D9E4C1D006C1F64 /* DetailViewController.swift */,
+				DCA14B5F1DAFD0650086E53D /* HueBridge.swift */,
+				DCA14B681DAFD0E80086E53D /* BridgeViewController.swift */,
+				DCA14B6A1DAFD74B0086E53D /* HueDatabaseHelper.swift */,
+				DC80702C1DAFFAA90013DBC9 /* AddBridgeViewController.swift */,
 			);
 			path = "Philips Hue";
 			sourceTree = "<group>";
@@ -315,7 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCFD6EB61DA675AD00A463A4 /* Settings.bundle in Resources */,
+				DCFC0B311DB50F7700A937AE /* huebridges.sqlite in Resources */,
 				DCC69EC01D9E4A60006C1F64 /* LaunchScreen.storyboard in Resources */,
 				DCC69EBD1D9E4A60006C1F64 /* Assets.xcassets in Resources */,
 				DCC69EBB1D9E4A60006C1F64 /* Main.storyboard in Resources */,
@@ -378,10 +400,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC69EC81D9E4B5E006C1F64 /* HueLamp.swift in Sources */,
+				DCA14B6B1DAFD74B0086E53D /* HueDatabaseHelper.swift in Sources */,
+				DCA14B601DAFD0650086E53D /* HueBridge.swift in Sources */,
 				DCC69EB81D9E4A60006C1F64 /* ViewController.swift in Sources */,
 				DC9AF7041DA79A7C0041DA5E /* HueCell.swift in Sources */,
 				DCC69EB61D9E4A60006C1F64 /* AppDelegate.swift in Sources */,
 				DCC69ECA1D9E4C1D006C1F64 /* DetailViewController.swift in Sources */,
+				DC80702D1DAFFAA90013DBC9 /* AddBridgeViewController.swift in Sources */,
+				DCA14B691DAFD0E80086E53D /* BridgeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +486,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Philips Hue/Philips Hue/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -502,6 +529,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Philips Hue/Philips Hue/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -519,6 +547,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KasperBalink.Philips-Hue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Philips Hue/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -534,6 +563,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KasperBalink.Philips-Hue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Philips Hue/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

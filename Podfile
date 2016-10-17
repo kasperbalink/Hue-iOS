@@ -7,5 +7,5 @@ target 'Philips Hue' do
 
   # Pods for Philips Hue
   pod 'EZLoadingActivity'
-
+  pod 'SwiftyJSON'
 end

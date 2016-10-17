@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xEg-bB-LCF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HwP-h3-jYI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -7,6 +7,72 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--BridgeView-->
+        <scene sceneID="2Tf-qB-2xQ">
+            <objects>
+                <tableViewController storyboardIdentifier="BridgeView" id="KM3-el-Aeg" userLabel="BridgeView" customClass="BridgeViewController" customModule="Philips_Hue" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="P9t-Ry-zsJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BridgeCell" id="KzP-ZO-Xk2">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KzP-ZO-Xk2" id="7WH-81-p9l">
+                                    <frame key="frameInset" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="F6Z-2e-3w5" kind="show" identifier="toHueLampView" id="XFS-Ms-Pjw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KM3-el-Aeg" id="7Z5-mU-2hF"/>
+                            <outlet property="delegate" destination="KM3-el-Aeg" id="PvA-Jl-363"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="gwf-5S-zod"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="aM3-va-PKc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                    <connections>
+                        <segue destination="GaR-7W-kWM" kind="show" identifier="toAddBridgeViewController" id="uCn-Zi-1Yt"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipu-dz-2Xw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="15"/>
+        </scene>
+        <!--Add Bridge View Contoller-->
+        <scene sceneID="Zmo-Hw-PlQ">
+            <objects>
+                <tableViewController id="GaR-7W-kWM" customClass="AddBridgeViewContoller" customModule="Philips_Hue" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wvj-pa-Rbf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IpCell" id="jX5-gZ-Sde">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jX5-gZ-Sde" id="9RR-iD-bzw">
+                                    <frame key="frameInset" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GaR-7W-kWM" id="6KB-QR-U6l"/>
+                            <outlet property="delegate" destination="GaR-7W-kWM" id="E8H-vG-Q4p"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6O-dx-K4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="944"/>
+        </scene>
         <!--Hue Lamps-->
         <scene sceneID="Fnj-X9-F3D">
             <objects>
@@ -20,7 +86,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="geg-OZ-Zog" id="0m0-3h-cYn">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5p-8a-bmI" userLabel="nameLabel">
@@ -77,7 +143,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jGY-pw-8c0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1455.2" y="14.842578710644679"/>
+            <point key="canvasLocation" x="2394.4000000000001" y="14.842578710644679"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="gxX-pS-ssK">
@@ -177,25 +243,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8p-q1-ZMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2572" y="14.842578710644679"/>
+            <point key="canvasLocation" x="3511.1999999999998" y="14.842578710644679"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="hDR-Uv-aro">
+        <scene sceneID="dNj-Mg-AfW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xEg-bB-LCF" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HwP-h3-jYI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GFf-N1-cRm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AdJ-RC-AEh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="F6Z-2e-3w5" kind="relationship" relationship="rootViewController" id="VjD-KM-WcU"/>
+                        <segue destination="KM3-el-Aeg" kind="relationship" relationship="rootViewController" id="8aH-8Q-ScI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7PR-Uk-w5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fD-1S-Rb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="14.842578710644679"/>
+            <point key="canvasLocation" x="400.80000000000001" y="14.842578710644679"/>
         </scene>
     </scenes>
 </document>
