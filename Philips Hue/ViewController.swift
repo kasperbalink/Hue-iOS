@@ -25,27 +25,7 @@ class ViewController: UITableViewController {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-        //        let userDefaults = UserDefaults.standard.string(forKey: "locationSetting")
-        //        if(userDefaults == "School")
-        //        {
-        //            title = "School"
-        //            url = "http://145.48.205.33/api/iYrmsQq1wu5FxF9CPqpJCnm1GpPVylKBWDUsNDhB/lights/"
-        //        }
-        //        else if(userDefaults == "SchoolMAD")
-        //        {
-        //            title = "School MAD"
-        //            url = http://192.168.1.179/api/366de469293bba57ef371add115f7b/lights/
-        //        }
-        //        else
-        
-        //        {
-        //            title = "Home"
-        //            url = "http://192.168.1.13/api/7fhuy-WsU2PWUaHh6SQslkyGpCIqpjlh1jFewoQt/lights/"
-        //        }
-        
+        super.viewDidLoad()        
         self.refreshControl?.addTarget(self, action: #selector(ViewController.handleRefresh(_:)), for: UIControlEvents.valueChanged)
         self.refreshControl?.backgroundColor = UIColor.lightGray
         
@@ -77,14 +57,14 @@ class ViewController: UITableViewController {
     func getHueLamps() {
         self.hueLamps.removeAll()
         // Doe de .GET
-        EZLoadingActivity.show("Loading...", disableUI: true)
+        _ = EZLoadingActivity.show("Loading...", disableUI: true)
         Alamofire.request(url, method: .get, encoding: URLEncoding.default).responseJSON
             {
                 response in
                 if(response.result.error == nil && response.result.value != nil)
                 {
                     self.hueLamps.removeAll()
-                    EZLoadingActivity.hide(true, animated: true)
+                    _ = EZLoadingActivity.hide(true, animated: true)
                     
                     // Hier json parsen
                     if let json = response.result.value as? Dictionary<String, Any>
@@ -113,23 +93,8 @@ class ViewController: UITableViewController {
                 else{
                     if(!self.alert.isViewLoaded)
                     {
-                        EZLoadingActivity.hide(false, animated: true)
-                        let settingsAction = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
-                            guard let settingsUrl = URL(string: UIApplicationOpenSettingsURLString) else {
-                                return
-                            }
-                            
-                            if UIApplication.shared.canOpenURL(settingsUrl) {
-                                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                                    print("Settings opened: \(success)") // Prints true
-                                })
-                            }
-                        }
-                        
-                        self.alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in })
-                        self.alert.addAction(settingsAction)
-                        
-                        self.present(self.alert, animated: true){}
+                        _ = EZLoadingActivity.hide(false, animated: true)
+                        _ = self.navigationController?.popViewController(animated: true)
                     }
                 }
         }

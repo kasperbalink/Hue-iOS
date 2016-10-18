@@ -122,7 +122,7 @@ class AddBridgeViewContoller : UITableViewController
         print("-------------")
         if(hdbh.addBridge(url: url, apiKey: apiKey) == 1)
         {
-            //TODO - return 
+            _ = self.navigationController?.popViewController(animated: true)
         }
         
     }
