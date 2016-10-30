@@ -24,17 +24,10 @@
                                     <constraint firstAttribute="width" constant="250" id="Y6E-MJ-fKi"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HueLamp - Kasper Balink - 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuV-1f-Ji6">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.52371692657470703" green="0.078676335513591766" blue="0.30946323275566101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eF3-dj-Exv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FiS-Vj-I2E"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="YuV-1f-Ji6" secondAttribute="bottom" constant="30" id="LE0-Gm-AJt"/>
-                            <constraint firstItem="YuV-1f-Ji6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Nv5-kP-57d"/>
                             <constraint firstItem="eF3-dj-Exv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uaj-Tz-smw"/>
                         </constraints>
                     </view>

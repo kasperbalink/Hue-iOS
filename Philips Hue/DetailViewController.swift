@@ -28,7 +28,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        self.view.backgroundColor = UIColor.white
+        url = url + lamp.id! + "/state/"
+        print(url)
         
         title = lamp.name
 
@@ -49,8 +51,18 @@ class DetailViewController: UIViewController {
         hueSliderOutlet.value = Float(lamp.hue!)
         briSliderOutlet.value = Float(lamp.bri!)
         satSliderOutlet.value = Float(lamp.sat!)
-        url = url + lamp.id! + "/state/"
-        print(url)
+      
+        self.view.layoutIfNeeded()
+        //self.colorViewOutlet.layer.borderColor = UIColor.darkGray.cgColor
+        self.colorViewOutlet.layer.cornerRadius = 20
+       // self.colorViewOutlet.layer.borderWidth = 3.0
+        self.colorViewOutlet.layer.shadowColor = UIColor.darkGray.cgColor
+        self.colorViewOutlet.layer.shadowOpacity = 0.9
+        self.colorViewOutlet.layer.shadowOffset = CGSize.zero
+        self.colorViewOutlet.layer.shadowRadius = 12
+        //Icon.clipsToBounds = true
+        
+        
         
         setColor()
     }

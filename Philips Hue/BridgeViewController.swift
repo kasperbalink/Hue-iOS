@@ -21,7 +21,7 @@ class BridgeViewController : UITableViewController
         super.viewDidLoad()
         let hdbh = HueDatabaseHelper.sharedInstance
         bridges = hdbh.getBridges()!
-        
+        title = "Bridges"
         let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
         
         self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: UIControlEvents.valueChanged)
@@ -163,6 +163,7 @@ class BridgeViewController : UITableViewController
                     let url = bridges[(indexPath as NSIndexPath).row].url! + "api/" + bridges[(indexPath as NSIndexPath).row].apiKey! + "/lights/"
                     print(url)
                     destination.url = url
+                    destination.title = bridges[(indexPath as NSIndexPath).row].name!
                 }
             }
         }
