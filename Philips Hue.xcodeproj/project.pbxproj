@@ -24,6 +24,7 @@
 		DCC69ECA1D9E4C1D006C1F64 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC69EC91D9E4C1D006C1F64 /* DetailViewController.swift */; };
 		DCE5CA781D9E87CA00AA3C14 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE5CA6B1D9E863500AA3C14 /* Alamofire.framework */; };
 		DCE5CA791D9E87CA00AA3C14 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCE5CA6B1D9E863500AA3C14 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCFB3D4D1DC76EE000A49BD8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3D4C1DC76EE000A49BD8 /* Settings.bundle */; };
 		DCFC0B311DB50F7700A937AE /* huebridges.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = DCFC0B301DB50F7700A937AE /* huebridges.sqlite */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		DCC69EC71D9E4B5E006C1F64 /* HueLamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueLamp.swift; sourceTree = "<group>"; };
 		DCC69EC91D9E4C1D006C1F64 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		DCFB3D4C1DC76EE000A49BD8 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		DCFC0B301DB50F7700A937AE /* huebridges.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = huebridges.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 		DCC69EA91D9E4A60006C1F64 = {
 			isa = PBXGroup;
 			children = (
+				DCFB3D4C1DC76EE000A49BD8 /* Settings.bundle */,
 				DCE5CA5F1D9E863500AA3C14 /* Alamofire.xcodeproj */,
 				DCC69EB41D9E4A60006C1F64 /* Philips Hue */,
 				DCC69EB31D9E4A60006C1F64 /* Products */,
@@ -339,6 +342,7 @@
 			files = (
 				DCFC0B311DB50F7700A937AE /* huebridges.sqlite in Resources */,
 				DCC69EC01D9E4A60006C1F64 /* LaunchScreen.storyboard in Resources */,
+				DCFB3D4D1DC76EE000A49BD8 /* Settings.bundle in Resources */,
 				DCC69EBD1D9E4A60006C1F64 /* Assets.xcassets in Resources */,
 				DCC69EBB1D9E4A60006C1F64 /* Main.storyboard in Resources */,
 			);

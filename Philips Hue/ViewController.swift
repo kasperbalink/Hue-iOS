@@ -25,7 +25,7 @@ class ViewController: UITableViewController {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
         self.refreshControl?.addTarget(self, action: #selector(ViewController.handleRefresh(_:)), for: UIControlEvents.valueChanged)
         self.refreshControl?.backgroundColor = UIColor.lightGray
         
@@ -159,6 +159,42 @@ class ViewController: UITableViewController {
         }
     }
     
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        let appDefaults = Dictionary<String, AnyObject>()
+        UserDefaults.standard.register(defaults: appDefaults)
+        UserDefaults.standard.synchronize()
+        
+        let a = UserDefaults.standard.bool(forKey: "enabled_preference")
+        
+        if a { // This is where it breaks
+            print("shaken is on")
+            
+            if motion == .motionShake
+            {
+                print("shaken")
+                for idx in 0 ..< hueLamps.count
+                {
+                    let finalUrl = url + hueLamps[idx].id! + "/state/"
+                    let parameters = ["hue": Int(arc4random_uniform(65535)),
+                                      "sat" : Int(255),
+                                      "bri" : Int(255),
+                                      "on" : true] as [String : Any]
+                    Alamofire.request(finalUrl, method: .put, parameters: parameters, encoding: JSONEncoding.default).responseJSON {
+                        response in
+                        if let _ = response.result.value
+                        {
+                            
+                        }
+                    }
+                }
+                getHueLamps()
+            }
+        }
+        else{
+            print("shaken is off")
+        }
+    }
     
 }
 
