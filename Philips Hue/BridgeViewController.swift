@@ -130,18 +130,25 @@ class BridgeViewController : UITableViewController
     }
     func changeName(apiKey : String)
     {
-        let altMessage = UIAlertController(title: "Warning", message: "This is Alert Message", preferredStyle: UIAlertControllerStyle.alert)
+        let altMessage = UIAlertController(title: "Enter new bridge name", message: "Namefield can't be empty", preferredStyle: UIAlertControllerStyle.alert)
         altMessage.addTextField(configurationHandler: configurationTextField)
         let okAction = UIAlertAction(title: "Change", style: UIAlertActionStyle.default) {
             UIAlertAction in
             let hdbh = HueDatabaseHelper.sharedInstance
-            if(hdbh.changeName(apiKey: apiKey, newName: self.tField.text!) == 1)
+            if(self.tField.text! != "")
             {
-                self.bridges = hdbh.getBridges()!
-                self.tableView.reloadData()
+                if(hdbh.changeName(apiKey: apiKey, newName: self.tField.text!) == 1)
+                {
+                    self.bridges = hdbh.getBridges()!
+                    self.tableView.reloadData()
+                }
+                else{
+                    print("Changing name failed")
+                }
             }
-            else{
-                print("Changing name failed")
+            else
+            {
+                self.present(altMessage, animated: true, completion: nil)
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) {

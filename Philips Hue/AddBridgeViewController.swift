@@ -16,7 +16,20 @@ class AddBridgeViewContoller : UITableViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Select bridge IP"
+        self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: UIControlEvents.valueChanged)
+        self.refreshControl?.backgroundColor = UIColor.lightGray
         
+        
+        getBridgeIps()
+    }
+    
+    func handleRefresh(_ refreshControl: UIRefreshControl) {
+        getBridgeIps()
+    }
+    
+    func getBridgeIps()
+    {
+        bridges = []
         let url = "https://www.meethue.com/api/nupnp"
         Alamofire.request(url, method: .get).responseJSON
             {
@@ -34,8 +47,11 @@ class AddBridgeViewContoller : UITableViewController
                 else{
                     print("no found")
                 }
+                self.refreshControl?.endRefreshing()
         }
-    }    
+    }
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

@@ -131,6 +131,14 @@ class ViewController: UITableViewController {
         cell.colorView.backgroundColor = color
         cell.nameLabel.text = hueLamps[row].name
         
+        self.view.layoutIfNeeded()
+        cell.colorView.layer.cornerRadius = cell.colorView.layer.frame.height / 2
+        cell.colorView.layer.shadowColor = UIColor.darkGray.cgColor
+        cell.colorView.layer.shadowOpacity = 0.9
+        cell.colorView.layer.shadowOffset = CGSize.zero
+        cell.colorView.layer.shadowRadius = 5
+
+        
         
         
         if(hueLamps[row].onState == 1)
