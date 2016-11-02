@@ -47,6 +47,7 @@ class ViewController: UITableViewController {
         // Simply adding an object to the data source for this example
         getHueLamps()
         hueLampTableView.reloadData()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,9 +98,10 @@ class ViewController: UITableViewController {
                         _ = self.navigationController?.popViewController(animated: true)
                     }
                 }
+                self.refreshControl?.endRefreshing()
+                self.hueLampTableView.reloadData()
+
         }
-        refreshControl?.endRefreshing()
-        hueLampTableView.reloadData()
     }
     
     

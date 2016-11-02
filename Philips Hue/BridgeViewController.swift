@@ -30,6 +30,7 @@ class BridgeViewController : UITableViewController
         self.tableView.reloadData()
     }
     
+
     
     func handleRefresh(_ refreshControl: UIRefreshControl) {
         let hdbh = HueDatabaseHelper.sharedInstance
