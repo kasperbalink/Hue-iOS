@@ -23,20 +23,18 @@ class ViewController: UITableViewController {
     
     let alert = UIAlertController(title: "No connection found", message:"Can't connect to a Philips Hue Bridge. Is the correct location set?", preferredStyle: .alert)
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.refreshControl?.addTarget(self, action: #selector(ViewController.handleRefresh(_:)), for: UIControlEvents.valueChanged)
         self.refreshControl?.backgroundColor = UIColor.lightGray
         
-        
-        
-        
-        getHueLamps()
         hueLampTableView.allowsSelection = false
         hueLampTableView.allowsSelection = true
         //activityIndicatorOutlet.startAnimating()
         hueLampTableView.reloadData()
+        
+
+        
         
     }
     
@@ -45,32 +43,34 @@ class ViewController: UITableViewController {
         // Fetch more objects from a web service, for example...
         
         // Simply adding an object to the data source for this example
-        getHueLamps()
+        getHueLamps(activity: true)
         hueLampTableView.reloadData()
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         hueLamps.removeAll()
-        getHueLamps()
+        getHueLamps(activity: true)
     }
     
-    func getHueLamps() {
-        self.hueLamps.removeAll()
+    func getHueLamps(activity : Bool) {
         // Doe de .GET
-        _ = EZLoadingActivity.show("Loading...", disableUI: true)
+        print("refresh")
+        if activity {
+            _ = EZLoadingActivity.show("Loading...", disableUI: true)
+        }
         Alamofire.request(url, method: .get, encoding: URLEncoding.default).responseJSON
             {
                 response in
                 if(response.result.error == nil && response.result.value != nil)
                 {
-                    self.hueLamps.removeAll()
-                    _ = EZLoadingActivity.hide(true, animated: true)
+                    if activity {
+                        _ = EZLoadingActivity.hide(true, animated: true) }
                     
                     // Hier json parsen
                     if let json = response.result.value as? Dictionary<String, Any>
                     {
-                        
+                        self.hueLamps.removeAll()
                         for (key, _) in json{
                             
                             let lamp = json[key] as! Dictionary<String, Any>
@@ -78,13 +78,18 @@ class ViewController: UITableViewController {
                             
                             if((lamp["type"] as! String) != "Dimmable light")
                             {
-                                let onState = state["on"] as! Int
+                                let onState = state["on"] as! Bool
                                 let hue = state["hue"] as! Int
                                 let bri = state["bri"] as! Int
                                 let sat = state["sat"] as! Int
                                 let name = lamp["name"] as! String
                                 
-                                let tmpLamp = HueLamp(id: key, name: name, onState: onState, hue: hue, bri: bri, sat: sat)
+                                var state = 1
+                                if onState {
+                                    state  = 1 }
+                                else {
+                                    state = 0 }
+                                let tmpLamp = HueLamp(id: key, name: name, onState: state, hue: hue, bri: bri, sat: sat)
                                 self.hueLamps.append(tmpLamp)
                                 self.hueLampTableView.reloadData()
                             }
@@ -100,7 +105,7 @@ class ViewController: UITableViewController {
                 }
                 self.refreshControl?.endRefreshing()
                 self.hueLampTableView.reloadData()
-
+                
         }
     }
     
@@ -139,7 +144,7 @@ class ViewController: UITableViewController {
         cell.colorView.layer.shadowOpacity = 0.9
         cell.colorView.layer.shadowOffset = CGSize.zero
         cell.colorView.layer.shadowRadius = 5
-
+        
         
         
         
@@ -178,32 +183,45 @@ class ViewController: UITableViewController {
         let a = UserDefaults.standard.bool(forKey: "enabled_preference")
         
         if a { // This is where it breaks
-            print("shaken is on")
-            
+            print("shake is on")
             if motion == .motionShake
             {
-                print("shaken")
-                for idx in 0 ..< hueLamps.count
+                for i in 0 ... 10
                 {
-                    let finalUrl = url + hueLamps[idx].id! + "/state/"
-                    let parameters = ["hue": Int(arc4random_uniform(65535)),
-                                      "sat" : Int(255),
-                                      "bri" : Int(255),
-                                      "on" : true] as [String : Any]
-                    Alamofire.request(finalUrl, method: .put, parameters: parameters, encoding: JSONEncoding.default).responseJSON {
-                        response in
-                        if let _ = response.result.value
-                        {
-                            
-                        }
-                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(i), execute: {
+                        self.randomColorAlert()
+                    })
                 }
-                getHueLamps()
             }
         }
         else{
-            print("shaken is off")
+            print("shake is off")
         }
+    }
+    
+    func randomColorAlert()
+    {
+        for idx in 0 ..< hueLamps.count
+        {
+            let finalUrl = self.url + self.hueLamps[idx].id! + "/state/"
+            let parameters = ["effect":"none",
+                              "alert": "select",
+                              "hue" : Int(arc4random_uniform(65280)),
+                              "bri":255,
+                              "sat":255,
+                              "on":true] as [String:Any]
+            
+            
+            Alamofire.request(finalUrl, method: .put, parameters: parameters, encoding: JSONEncoding.default).responseJSON {
+                response in
+                if let _ = response.result.value
+                {
+                    self.getHueLamps(activity: false)
+                }
+            }
+        }
+        
+        
     }
     
 }
